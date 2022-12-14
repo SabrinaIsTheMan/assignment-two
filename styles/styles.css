@@ -226,6 +226,20 @@ html {
   overflow: hidden;
 }
 
+@font-face {
+  font-family: "Jakarta Sans";
+  font-weight: normal;
+  src: url(../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff), url(../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff2), url(../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Jakarta Sans";
+  font-weight: bold;
+  src: url(../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff), url(../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff2), url(../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Bold.ttf);
+}
+@font-face {
+  font-family: "Young Serif";
+  src: url(../fonts/youngserif/YoungSerif-Regular.otf);
+}
 html {
   font-size: 125%;
 }
@@ -252,9 +266,16 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, p, body {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
+  font-family: "Young Serif";
+}
+
+p, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Jakarta Sans";
 }
 
 h1 {

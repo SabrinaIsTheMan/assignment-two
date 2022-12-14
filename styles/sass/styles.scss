@@ -16,9 +16,10 @@
 // h4: 34px;
 // h5: 14px;
 
+@import "./partials/setup";
+@import "./partials/typography";
 @import "./partials/variables";
 
-@import "./partials/setup";
-@import "./partials/baseStyles"
+@import "./partials/baseStyles";
 
 
