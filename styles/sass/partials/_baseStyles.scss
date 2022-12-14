@@ -1,0 +1,52 @@
+html{
+   font-size: 125%;
+}
+
+.wrapper{
+   max-width: 1080px;
+   width: 90%;
+   margin: 0 auto;
+}
+
+img{
+   max-width: 100%;
+   display: block;
+   height: auto;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,p,body{
+   margin: 0;
+    padding: 0;
+}
+
+
+// TYPOGRAPHY 
+h1{
+    font-size: 28px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 54px;
+}
+
+h4 {
+    font-size: 34px;
+}
+
+h5 {
+    font-size: 14px;
+}
