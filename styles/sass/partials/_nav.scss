@@ -1,3 +1,20 @@
+.skipLink{
+    font-size: 1rem;
+    padding: 10px;
+    background: $solidWhite;
+    color: $primary;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+    width: 100%;
+    left: -100%;
+
+    &:focus{
+        left: 0;
+    }
+}
+
 .navBar {
     position: sticky;
     top: 0;
@@ -50,7 +67,7 @@
     width: 100%;
     max-width: 506px;
     height: 100vh;
-    background-color: $primary;
+    background: $primary;
     color: $solidWhite;
     display: flex;
     flex-direction: column;
@@ -76,10 +93,7 @@
             line-height: 2.5rem;
             color: rgba($solidWhite, 1);
 
-            &:hover {
-                color: rgba($solidWhite, 0.5);
-            }
-
+            &:hover,
             &:focus {
                 color: rgba($solidWhite, 0.5);
             }

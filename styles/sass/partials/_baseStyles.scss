@@ -10,9 +10,10 @@ img{
    height: auto;
 }
 
+// default button styles
 button {
     color: $primary;
-    background-color: transparent;
+    background: transparent;
     padding: 18px 36px;
     border: 2px solid $primary;
     font-size: 0.8rem;
@@ -22,60 +23,41 @@ button {
     cursor: pointer;
     transition: 0.3s;
 
-    &:hover {
-        background-color: $primary;
-        color: $solidWhite;
-    }
-
+    &:hover,
     &:focus {
-        background-color: $primary;
+        background: $primary;
         color: $solidWhite;
     }
-
+    
+    // styles for buttons with 'secondary' class
     &.secondary {
-        background-color: transparent;
+        background: transparent;
         border-color: $solidWhite;
         color: $solidWhite;
         padding: 8px 12px;
 
-        &:hover {
-            background-color: $solidWhite;
-            color: $primary;
-        }
-
+        &:hover,
         &:focus {
-            background-color: $solidWhite;
+            background: $solidWhite;
             color: $primary;
         }
     }
 
-    &.solid {
-        color: $solidWhite;
-        background-color: $primary;
-
-        &:hover {
-            color: $primary;
-            background-color: $solidWhite;
-        }
-    }
-
-    // style the button in the main nav menu to look just like an icon
+    // styles for icon buttons in main nav
     &.menuIcon {
         display: inherit;
         padding: 0;
         border: none;
 
-        &:hover {
-            background-color: transparent;
-        }
-
+        &:hover,
         &:focus {
-            background-color: transparent;
+            background: transparent;
         }
     }
 }
 
 a {
+    // styles for anchor tag with 'button' class
     &.button {
         color: $primary;
         background-color: transparent;
@@ -87,14 +69,29 @@ a {
         text-align: center;
         transition: 0.3s;
 
-        &:hover {
-            background-color: $primary;
+        &:hover,
+        &:focus {
+            background: $primary;
             color: $solidWhite;
         }
+    }
+    
+    // styles for anchor tag with 'solid' class
+    &.solid {
+        color: $solidWhite;
+        background: $primary;
+        padding: 18px 36px;
+        border: 2px solid $primary;
+        font-size: 0.8rem;
+        font-weight: bold;
+        line-height: 1.2rem;
+        text-align: center;
+        transition: 0.3s;
 
+        &:hover,
         &:focus {
-            background-color: $primary;
-            color: $solidWhite;
+            color: $primary;
+            background: $solidWhite;
         }
     }
 }

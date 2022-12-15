@@ -329,7 +329,7 @@ img {
 
 button {
   color: #084b6d;
-  background-color: transparent;
+  background: transparent;
   padding: 18px 36px;
   border: 2px solid #084b6d;
   font-size: 0.8rem;
@@ -340,46 +340,27 @@ button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-button:hover {
-  background-color: #084b6d;
-  color: #fff;
-}
-button:focus {
-  background-color: #084b6d;
+button:hover, button:focus {
+  background: #084b6d;
   color: #fff;
 }
 button.secondary {
-  background-color: transparent;
+  background: transparent;
   border-color: #fff;
   color: #fff;
   padding: 8px 12px;
 }
-button.secondary:hover {
-  background-color: #fff;
+button.secondary:hover, button.secondary:focus {
+  background: #fff;
   color: #084b6d;
-}
-button.secondary:focus {
-  background-color: #fff;
-  color: #084b6d;
-}
-button.solid {
-  color: #fff;
-  background-color: #084b6d;
-}
-button.solid:hover {
-  color: #084b6d;
-  background-color: #fff;
 }
 button.menuIcon {
   display: inherit;
   padding: 0;
   border: none;
 }
-button.menuIcon:hover {
-  background-color: transparent;
-}
-button.menuIcon:focus {
-  background-color: transparent;
+button.menuIcon:hover, button.menuIcon:focus {
+  background: transparent;
 }
 
 a.button {
@@ -394,13 +375,41 @@ a.button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-a.button:hover {
-  background-color: #084b6d;
+a.button:hover, a.button:focus {
+  background: #084b6d;
   color: #fff;
 }
-a.button:focus {
-  background-color: #084b6d;
+a.solid {
   color: #fff;
+  background: #084b6d;
+  padding: 18px 36px;
+  border: 2px solid #084b6d;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+a.solid:hover, a.solid:focus {
+  color: #084b6d;
+  background: #fff;
+}
+
+.skipLink {
+  font-size: 1rem;
+  padding: 10px;
+  background: #fff;
+  color: #084b6d;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  text-align: center;
+  width: 100%;
+  left: -100%;
+}
+.skipLink:focus {
+  left: 0;
 }
 
 .navBar {
@@ -459,7 +468,7 @@ a.button:focus {
   width: 100%;
   max-width: 506px;
   height: 100vh;
-  background-color: #084b6d;
+  background: #084b6d;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,9 +501,46 @@ a.button:focus {
   line-height: 2.5rem;
   color: white;
 }
-.slideOutNav .mainMenu a:hover {
+.slideOutNav .mainMenu a:hover, .slideOutNav .mainMenu a:focus {
   color: rgba(255, 255, 255, 0.5);
 }
-.slideOutNav .mainMenu a:focus {
+
+footer {
+  background: #084b6d;
+  color: #fff;
+  padding: 90px 0 50px 0;
+}
+footer .footerFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 90px;
+}
+footer .footerFlexContainer h4 {
+  color: #fff;
+}
+footer .footerNav {
+  width: 40%;
+}
+footer .footerNav nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .footerNav nav ul {
+  width: 33%;
+}
+footer .footerNav nav a {
   color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+footer .footerNav nav a:hover, footer .footerNav nav a:focus {
+  color: white;
 }
