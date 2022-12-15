@@ -1,0 +1,89 @@
+.navBar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid rgba($primary, 0.08);
+    background: $solidWhite;
+
+    .wrapper {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+    .searchCart {
+        display: flex;
+
+        .searchIcon,
+        .bag {
+            margin-right: 15px;
+        }
+    }
+
+    a {
+        display: flex;
+    }
+
+    .logo {
+        margin-left: 60px;
+    }
+
+    .counter {
+        display: flex;
+        align-items: center;
+
+        p {
+            width: 24px;
+            height: 24px;
+            background: $primary;
+            color: $solidWhite;
+            text-align: center;
+            border-radius: 50%;
+        }
+    }
+}
+
+// TO DO: implement slide-out menu open/close functionality using JS */
+.slideOutNav {
+    padding: 35px 50px;
+    border-right: 1px solid $secondary;
+    width: 100%;
+    max-width: 506px;
+    height: 100vh;
+    background-color: $primary;
+    color: $solidWhite;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -506px;
+    z-index: 20;
+    transition: 0.75s;
+
+    .buttonContainer {
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            padding: 10px 0 10px 20px;
+        }
+    }
+
+    .mainMenu {
+        a {
+            font-family: "Young Serif";
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+            color: rgba($solidWhite, 1);
+
+            &:hover {
+                color: rgba($solidWhite, 0.5);
+            }
+
+            &:focus {
+                color: rgba($solidWhite, 0.5);
+            }
+        }
+    }
+}
+
