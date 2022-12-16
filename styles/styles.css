@@ -403,7 +403,7 @@ a.solid:hover, a.solid:focus {
   color: #084b6d;
   position: absolute;
   top: 0;
-  z-index: 1000;
+  z-index: 30;
   text-align: center;
   width: 100%;
   left: -100%;
@@ -413,8 +413,9 @@ a.solid:hover, a.solid:focus {
 }
 
 .navBar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 10;
   border-bottom: 1px solid rgba(8, 75, 109, 0.08);
   background: #fff;
@@ -428,61 +429,37 @@ a.solid:hover, a.solid:focus {
           justify-content: space-between;
   padding: 20px 0;
 }
-.navBar .searchCart {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.navBar .searchCart .searchIcon,
-.navBar .searchCart .bag {
-  margin-right: 15px;
-}
-.navBar a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.navBar .logo {
-  margin-left: 60px;
-}
-.navBar .counter {
+
+.searchCart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 15px;
 }
-.navBar .counter p {
-  width: 24px;
-  height: 24px;
+
+.counter p {
   background: #084b6d;
   color: #fff;
-  text-align: center;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
+  text-align: center;
 }
 
 .slideOutNav {
-  padding: 35px 50px;
-  border-right: 1px solid #f4fcff;
-  width: 100%;
-  max-width: 506px;
   height: 100vh;
+  z-index: 20;
   background: #084b6d;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  width: 100%;
+  max-width: 500px;
   position: fixed;
   top: 0;
-  left: -506px;
-  z-index: 20;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
+  padding: 35px 50px;
+  border-right: 1px solid #f4fcff;
 }
 .slideOutNav .buttonContainer {
   display: -webkit-box;

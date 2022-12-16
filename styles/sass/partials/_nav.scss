@@ -1,3 +1,4 @@
+// SKIP LINK
 .skipLink{
     font-size: 1rem;
     padding: 10px;
@@ -5,7 +6,7 @@
     color: $primary;
     position: absolute;
     top: 0;
-    z-index: 1000;
+    z-index: 30;
     text-align: center;
     width: 100%;
     left: -100%;
@@ -15,9 +16,11 @@
     }
 }
 
+// NAV BAR
 .navBar {
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     z-index: 10;
     border-bottom: 1px solid rgba($primary, 0.08);
     background: $solidWhite;
@@ -27,55 +30,38 @@
             justify-content: space-between;
             padding: 20px 0;
         }
+}
 
-    .searchCart {
-        display: flex;
+.searchCart {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
-        .searchIcon,
-        .bag {
-            margin-right: 15px;
-        }
-    }
-
-    a {
-        display: flex;
-    }
-
-    .logo {
-        margin-left: 60px;
-    }
-
-    .counter {
-        display: flex;
-        align-items: center;
-
-        p {
-            width: 24px;
-            height: 24px;
-            background: $primary;
-            color: $solidWhite;
-            text-align: center;
-            border-radius: 50%;
-        }
-    }
+.counter p {
+    background: $primary;
+    color: $solidWhite;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
 }
 
 // TO DO: implement slide-out menu open/close functionality using JS */
 .slideOutNav {
-    padding: 35px 50px;
-    border-right: 1px solid $secondary;
-    width: 100%;
-    max-width: 506px;
     height: 100vh;
+    z-index: 20;
     background: $primary;
     color: $solidWhite;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
     position: fixed;
     top: 0;
-    left: -506px;
-    z-index: 20;
-    transition: 0.75s;
+    // left: -500px;
+    padding: 35px 50px;
+    border-right: 1px solid $secondary;
+    
+    // transition: 0.75s;
 
     .buttonContainer {
         display: flex;
@@ -86,18 +72,15 @@
         }
     }
 
-    .mainMenu {
-        a {
-            font-family: "Young Serif";
-            font-size: 1.6rem;
-            line-height: 2.5rem;
-            color: rgba($solidWhite, 1);
+    .mainMenu a {
+        font-family: "Young Serif";
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        color: rgba($solidWhite, 1);
 
-            &:hover,
-            &:focus {
-                color: rgba($solidWhite, 0.5);
-            }
+        &:hover,
+        &:focus {
+            color: rgba($solidWhite, 0.5);
         }
     }
 }
-
