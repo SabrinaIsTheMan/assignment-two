@@ -1,9 +1,9 @@
-footer {
+.footer {
     background: $primary;
     color: $solidWhite;
     padding: 90px 0 50px 0;
 
-    .footerFlexContainer {
+    .footerFlex {
         display: flex;
         justify-content: space-between;
         margin-bottom: 90px;
@@ -15,24 +15,19 @@ footer {
 
     .footerNav {
         width: 40%;
+        display: flex;
+        justify-content: space-between;
 
-        nav {
-            display: flex;
-            justify-content: space-between;
+        ul { width: 33%;}
 
-            ul {
-                width: 33%;
-            }
+        a {
+            color: rgba($color: $solidWhite, $alpha: 0.5);
+            font-size: 0.8rem;
+            line-height: 1.5rem;
 
-            a {
-                color: rgba($color: $solidWhite, $alpha: 0.5);
-                font-size: 0.8rem;
-                line-height: 1.5rem;
-
-                &:hover,
-                &:focus {
-                    color: rgba($color: $solidWhite, $alpha: 1);
-                }
+            &:hover,
+            &:focus {
+                color: rgba($color: $solidWhite, $alpha: 1);
             }
         }
     }
