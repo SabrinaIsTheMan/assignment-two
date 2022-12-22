@@ -19,3 +19,23 @@ header {
         }
     }
 }
+
+// CONTACT PAGE HEADER
+.contactHeader {
+    background: $quaternary;
+    padding-top: 120px;
+    text-align: center;
+    .wrapper {
+        padding-bottom: 40px;
+    }
+
+    // WAVE DESIGN
+    &::after {
+        content: "";
+        width: 100%;
+        height: 150px;
+        background: url(../assets/wave.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 150px;
+    }
+}
