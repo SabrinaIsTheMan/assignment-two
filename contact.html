@@ -66,8 +66,48 @@
         </div> <!-- .slideOutNav END -->
     </nav>
 
-    <main>
-        
+    <header class="contactHeader">
+        <div class="wrapper">
+            <h5>Contact</h5>
+            <h3>We're Here to Help</h3>
+            <p>Any other questions: Reach out at <a href="mailto:support@toybox.io">support@toybox.io</a></p>
+        </div>
+    </header>
+
+    <main class="contact" id="mainContent">
+        <div class="wrapper">
+            <form action="" class="contactForm" name="contactForm">
+                <label for="name" class="sr-only"></label>
+                <input type="text" id="name" placeholder="Name">
+
+                <label for="surname" class="sr-only"></label>
+                <input type="text" id="surname" placeholder="Surname">
+
+                <label for="email" class="sr-only"></label>
+                <input type="email" id="email" placeholder="Email">
+
+                <label for="phone" class="sr-only"></label>
+                <input type="tel" id="phone" placeholder="Phone">
+
+                <select name="reason" id="reason">
+                    <option value="initial" disable selected>Reason for contacting</option>
+                    <option value="refund">Refund request</option>
+                    <option value="status">Status update</option>
+                    <option value="praise">Praise</option>
+                    <option value="general">General concerns</option>
+                </select>
+
+                <label for="message" class="sr-only"></label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message for me"></textarea>
+
+                <fieldset>
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I agree to the Terms & Conditions</label>
+                </fieldset>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </main>
 
     <!-- footer section -->
