@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARTER - Toybox Contact Page</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <!-- SkipLink -->
+    <a href="#mainContent" class="skipLink">Skip to main content.</a>
+
+    <!-- nav section -->
+    <nav class="navBar">
+        <!-- wrapper to contain content -->
+        <div class="wrapper">
+            <!-- navigation menu button -->
+            <button class="menuIcon">
+                <img src="./assets/menu-button.svg" alt="Button to open navigation" class="menuIcon">
+            </button>
+
+            <!-- home button/logo -->
+            <a href="./index.html" class="logo">
+                <h1>Toybox</h1>
+            </a>
+            <!-- search/cart/counter area -->
+            <div class="searchCart">
+                <!-- search -->
+                <button class="menuIcon">
+                    <img src="./assets/search.svg" alt="Search icon" class="searchIcon">
+                </button>
+
+                <!-- cart -->
+                <a href="#" class="bag">
+                    <img src="./assets/shop-bag.svg" alt="Shopping bag icon" class="bagIcon">
+                </a>
+
+                <!-- counter -->
+                <div class="counter">
+                    <p class="smallCopy">0</p>
+                </div> <!-- .counter END -->
+            </div> <!-- .searchCart END -->
+        </div> <!-- .wrapper END -->
+
+        <!-- slide out nav -->
+        <div class="slideOutNav">
+            <!-- Menu CLOSE button -->
+            <div class="buttonContainer">
+                <!-- this container lets us flex the button and align it right -->
+                <button>
+                    <img src="./assets/menu-close.svg" alt="Close button for the slide-out nav">
+                </button>
+            </div>
+
+            <!-- ul to hold menu items -->
+            <ul class="mainMenu">
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div> <!-- .slideOutNav END -->
+    </nav>
+
+    <main>
+        
+    </main>
+
+    <!-- footer section -->
+	<footer class="footer" id="footer">
+		<div class="wrapper">
+			<div class="footerFlex">
+				<!-- Flex Item 1 - LOGO -->
+				<a href="./index.html" class="logo">
+					<h4>Toybox</h4>
+				</a>
+
+				<!-- Flex Item 2 - Footer Menu -->
+				<nav class="footerNav">
+					<!-- List 1 - SHOP -->
+					<ul class="footerShop">
+						<li>
+							<h5>Shop</h5>
+						</li>
+						<li>
+							<a href="#">Safari</a>
+						</li>
+						<li>
+							<a href="#">Ocean</a>
+						</li>
+						<li>
+							<a href="#">Dinos</a>
+						</li>
+						<li><a href="#">Sale</a>
+						</li>
+					</ul>
+
+					<!-- List 2 - ABOUT -->
+					<ul class="footerAbout">
+						<li>
+							<h5>About Us</h5>
+						</li>
+						<li>
+							<a href="#">About Us</a>
+						</li>
+						<li>
+							<a href="#">FAQ</a>
+						</li>
+						<li>
+							<a href="#">News</a>
+						</li>
+						<li>
+							<a href="#">Legal</a>
+						</li>
+						<li>
+							<a href="./contact.html">Contact</a>
+						</li>
+					</ul>
+
+					<!-- List 3 - Template -->
+					<ul class="footerTemplate">
+						<li>
+							<h5>Template</h5>
+						</li>
+						<li>
+							<a href="#">Style Guide</a>
+						</li>
+						<li>
+							<a href="#">Licenses</a>
+						</li>
+						<li>
+							<a href="#">Changelog</a>
+						</li>
+					</ul>
+				</nav>
+			</div> <!-- .footerFlex END -->
+		</div> <!-- .wrapper END -->
+	</footer>
+</body>
+</html>
