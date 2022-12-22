@@ -1,62 +1,92 @@
-// smaller DESKTOP devices
+// SMALLER DESKTOP MQ
 @media (max-width: 1000px) {
+    header {
+        .headerImgContainer{
+            img{
+                height: 100vh;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .categoryGallery {
+        .items a {
+            padding: 25px;
+        }
+    }
+
     footer {
         .footerFlex {
             flex-direction: column;
             align-items: center;
-            margin-bottom: 100px;
 
             .logo {
-                margin: 0 0 30px 0;
+                margin-bottom: 30px;
             }
-        }
 
-        .footerNav {
-            width: 80%;
-
-            nav {
-                ul {
-                    width: auto;
-                }
+            .footerNav{
+                width: 80%;
             }
         }
     }
 }
 
-// TABLET
+// TABLET MQ
 @media (max-width: 800px) {
-    .slideOutNav {
-        width: 100%;
-
-        .mainMenu {
-            a {
-                font-weight: bold;
-                font-size: 1.2rem;
+    header{
+        flex-direction: column;
+        .headerImgContainer{
+            width: 100%;
+            img{
+                max-height: 350px;
+                width: 100%;
             }
         }
-    }
 
-    .footer {
-        .footerFlex {
-            margin-bottom: 60px;
-        }
-
-        .footerNav {
-            nav {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-
-                ul {
-                    margin-bottom: 24px;
-                    width: 100%;
-                }
-            }
+        .headerContent{
+            width: 100%;
+            padding: 50px 0;
         }
     }
 }
 
-// MOBILE
+// MOBILE MQ
 @media (max-width: 500px) {
+    .navBar {
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo {
+            margin: 20px 0;
+        }
+    }
     
+    h3 {
+        font-size: 2.2rem;
+    }
+
+    .categoryGallery {
+        .items {
+            width: 100%;
+            
+            a {
+            padding: 30px;
+            margin: 40px 0 0;
+            }
+        }
+    }
+
+    footer {
+        .footerNav {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            ul {
+                margin-bottom: 30px;
+            }
+        }
+    }
 }

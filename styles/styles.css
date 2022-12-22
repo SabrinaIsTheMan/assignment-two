@@ -616,6 +616,7 @@ header .headerContent .contentContainer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: center;
 }
 .footer .footerNav ul {
   width: 33%;
@@ -630,6 +631,14 @@ header .headerContent .contentContainer {
 }
 
 @media (max-width: 1000px) {
+  header .headerImgContainer img {
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .categoryGallery .items a {
+    padding: 25px;
+  }
   footer .footerFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -638,30 +647,57 @@ header .headerContent .contentContainer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 100px;
   }
   footer .footerFlex .logo {
-    margin: 0 0 30px 0;
+    margin-bottom: 30px;
   }
-  footer .footerNav {
+  footer .footerFlex .footerNav {
     width: 80%;
-  }
-  footer .footerNav nav ul {
-    width: auto;
   }
 }
 @media (max-width: 800px) {
-  .slideOutNav {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .headerImgContainer {
     width: 100%;
   }
-  .slideOutNav .mainMenu a {
-    font-weight: bold;
-    font-size: 1.2rem;
+  header .headerImgContainer img {
+    max-height: 350px;
+    width: 100%;
   }
-  .footer .footerFlex {
-    margin-bottom: 60px;
+  header .headerContent {
+    width: 100%;
+    padding: 50px 0;
   }
-  .footer .footerNav nav {
+}
+@media (max-width: 500px) {
+  .navBar .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navBar .logo {
+    margin: 20px 0;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+  .categoryGallery .items {
+    width: 100%;
+  }
+  .categoryGallery .items a {
+    padding: 30px;
+    margin: 40px 0 0;
+  }
+  footer .footerNav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -671,8 +707,7 @@ header .headerContent .contentContainer {
             align-items: center;
     text-align: center;
   }
-  .footer .footerNav nav ul {
-    margin-bottom: 24px;
-    width: 100%;
+  footer .footerNav ul {
+    margin-bottom: 30px;
   }
 }
