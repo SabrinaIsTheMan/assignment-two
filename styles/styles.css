@@ -524,9 +524,29 @@ header .headerContent .contentContainer {
   background-size: 100% 150px;
 }
 
+.categoryCarousel {
+  position: relative;
+  width: 40%;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+.categoryGalleryContainer {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
 .categoryGallery {
-  display: grid;
-  place-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   width: 100%;
   height: 80vh;
@@ -537,14 +557,14 @@ header .headerContent .contentContainer {
   transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
 }
 .categoryGallery .items {
-  width: 40%;
+  width: 100%;
   position: absolute;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .categoryGallery .items a {
   padding: 45px;
-  margin: 50px 25px 25px;
+  margin: 25px;
   border-radius: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -582,7 +602,7 @@ header .headerContent .contentContainer {
 }
 
 .carouselBtn {
-  position: relative;
+  position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -597,17 +617,17 @@ header .headerContent .contentContainer {
   background-color: #084b6d;
   font-size: 20px;
 }
-.carouselBtn::active {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.carouselBtn:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .btnPrev {
-  left: -25%;
+  left: -10%;
 }
 
 .btnNext {
-  right: -25%;
+  right: -10%;
 }
 
 .play {
