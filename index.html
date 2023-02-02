@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>STARTER - Toybox Homepage</title>
+	<title>Assignment 2 - Toybox Homepage</title>
 	<link rel="stylesheet" href="./styles/styles.css">
 </head>
 
@@ -88,37 +88,41 @@
 				<h2>Categories</h2>
 				<p>Explore our ranger of hand-made toys.</p>
 				<!-- gallery -->
-				<ul class="categoryGallery">
-					<li class="items item1">
-						<a href="#">
-							<img src="./assets/safari-trio.jpg" alt="A collection of Safari-themed toys">
-							<h4>Safari</h4>
-							<p>Lan-dwelling African favorites</p>
-						</a>
-					</li>
-					<li class="items item2">
-						<a href="#">
-							<img src="./assets/ocean-trio.jpg" alt="A collection of ocean-themed toys">
-							<h4>Ocean</h4>
-							<p>Adorable aquatic characters</p>
-						</a>
-					</li>
-					<li class="items item3">
-						<a href="#">
-							<img src="./assets/dino-trio.jpg" alt="Hand-carved dinosaur toys for kids">
-							<h4>Dinos</h4>
-							<p>Meet these Prehistoric Pals</p>
-						</a>
-					</li>
-					<li class="items item4">
-						<a href="#">
-							<img src="./assets/sale.jpg" alt="A toddler pulling two wooden animals on wheels">
-							<h4>Sale</h4>
-							<p>Act quickly and grab these bargains</p>
-						</a>
-					</li>
-				</ul>
-			</div> <!-- wrapper END -->
+				<div class="categoryGalleryWrapper">
+					<ul class="categoryGallery">
+						<li class="items item1 currentItem">
+							<a href="#">
+								<img src="./assets/safari-trio.jpg" alt="A collection of Safari-themed toys">
+								<h4>Safari</h4>
+								<p>Lan-dwelling African favorites</p>
+							</a>
+						</li>
+						<li class="items item2">
+							<a href="#">
+								<img src="./assets/ocean-trio.jpg" alt="A collection of ocean-themed toys">
+								<h4>Ocean</h4>
+								<p>Adorable aquatic characters</p>
+							</a>
+						</li>
+						<li class="items item3">
+							<a href="#">
+								<img src="./assets/dino-trio.jpg" alt="Hand-carved dinosaur toys for kids">
+								<h4>Dinos</h4>
+								<p>Meet these Prehistoric Pals</p>
+							</a>
+						</li>
+						<li class="items item4">
+							<a href="#">
+								<img src="./assets/sale.jpg" alt="A toddler pulling two wooden animals on wheels">
+								<h4>Sale</h4>
+								<p>Act quickly and grab these bargains</p>
+							</a>
+						</li>
+					</ul>
+					<button class="carouselBtn btnNext">></button>
+					<button class="carouselBtn btnPrev"><</button>
+				</div> <!-- .categoryGalleryWrapper END -->
+			</div> <!-- .wrapper END -->
 		</section> <!-- .categories END -->
 
 		<!-- Let Them Play section -->
@@ -204,5 +208,6 @@
 			</div> <!-- .footerFlex END -->
 		</div> <!-- .wrapper END -->
 	</footer>
+	<script src="./script.js"></script>
 </body>
 </html>

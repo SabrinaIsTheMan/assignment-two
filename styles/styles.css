@@ -525,19 +525,22 @@ header .headerContent .contentContainer {
 }
 
 .categoryGallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: grid;
+  place-items: center;
   text-align: center;
   width: 100%;
+  height: 80vh;
+  position: relative;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
 }
 .categoryGallery .items {
   width: 40%;
+  position: absolute;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .categoryGallery .items a {
   padding: 45px;
@@ -576,6 +579,35 @@ header .headerContent .contentContainer {
 }
 .categoryGallery .item4 a {
   background: #fff5f5;
+}
+
+.carouselBtn {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border: none;
+  border-radius: 50%;
+  z-index: 30;
+  cursor: pointer;
+  color: #fff;
+  background-color: #084b6d;
+  font-size: 20px;
+}
+.carouselBtn::active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.btnPrev {
+  left: -25%;
+}
+
+.btnNext {
+  right: -25%;
 }
 
 .play {
