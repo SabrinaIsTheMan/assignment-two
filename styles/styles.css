@@ -611,7 +611,6 @@ header .headerContent .contentContainer {
   padding: 5px;
   border: none;
   border-radius: 50%;
-  z-index: 30;
   cursor: pointer;
   color: #fff;
   background-color: #084b6d;
