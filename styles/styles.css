@@ -461,6 +461,8 @@ a.solid:hover, a.solid:focus {
   left: -500px;
   padding: 35px 50px;
   border-right: 1px solid #f4fcff;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 .slideOutNav .buttonContainer {
   display: -webkit-box;
