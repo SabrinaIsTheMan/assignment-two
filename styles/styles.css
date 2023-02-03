@@ -608,6 +608,116 @@ header .headerContent .contentContainer {
   padding: 70px 45px;
 }
 
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 90px;
+}
+
+input,
+textarea {
+  padding: 0 0 10px 5px;
+  border: none;
+  margin-bottom: 40px;
+  color: #333;
+  font-family: "Jakarta Sans";
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+input::placeholder,
+textarea::placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+input:focus,
+textarea:focus {
+  border-bottom: 1px solid #084b6d;
+}
+
+input {
+  border-bottom: 1px solid #eee;
+}
+
+textarea {
+  min-height: 130px;
+  border: 1px solid #eee;
+  border-top: none;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+  font-family: "Jakarta Sans";
+  color: #084b6d;
+  padding: 0 0 10px 0;
+  border: none;
+  border-bottom: 1px solid #eee;
+  border-radius: 0;
+  margin-bottom: 40px;
+  width: 100%;
+  background-color: #fff;
+  background-image: url(../assets/caret-down-solid.svg);
+  background-repeat: no-repeat, repeat;
+  background-position: 95% center;
+  background-size: 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+option {
+  font-family: "Jakarta Sans", sans-serif;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 10px 0;
+}
+fieldset label {
+  font-size: 0.8rem;
+}
+fieldset input {
+  margin: 0 10px 0 0;
+  accent-color: #084b6d;
+}
+
 .footer {
   background: #084b6d;
   color: #fff;
