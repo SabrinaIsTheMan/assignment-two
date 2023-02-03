@@ -454,7 +454,7 @@ a.solid:hover, a.solid:focus {
   z-index: 20;
   background: #084b6d;
   color: #fff;
-  width: 100%;
+  width: 20%;
   max-width: 500px;
   position: fixed;
   top: 0;
